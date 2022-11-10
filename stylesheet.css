@@ -1,0 +1,399 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+	color: black;
+	flex: 1;
+}
+
+.indexwrappernowidth {
+	margin: 0 auto;
+	color: black;
+	flex: 1;
+}
+
+.indexwrapperwidth {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.wrapper hr {
+	border-color: red;
+}
+
+.pictures {
+	color: black;
+}
+
+body {
+	text-align: center;
+	font: 16px;
+	background-attachment: fixed;
+}
+
+.notcenter {
+	text-align: left;
+}
+
+.all {
+	position: fixed;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+#myBtn {
+	width: 200px;
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+}
+
+#myBtn:hover {
+	background: #ddd;
+	color: black;
+}
+
+.middle {
+	vertical-align: middle;
+	max-width: 50px;
+	max-height: 50px;
+}
+
+h1 {
+	margin-bottom: 7%;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+footer {
+	width: 100%;
+	background: #2e292e;
+	padding: 10px;
+	color: #ffffff;
+	text-align: center;
+	position: static;
+	bottom: 0px;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+}
+
+html,
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	background-color: white;
+	color: white;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+  /*margin: 0;enable this if we dont use wrapper which should be never*/
+	;
+}
+
+h2 {
+	color: black;
+}
+
+.navbar-inverse {
+	background-color: #2E292E;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+	background-color: #2E292E;
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+	background-color: #2e292e;
+}
+
+.navbar-inverse {
+	background-image: none;
+	font-size: 22px;
+}
+
+}
+
+.navbar-inverse {
+	border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+	color: #AFB3AD;
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+	color: #AFB3AD;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	color: #AFB3AD;
+}
+
+.navbar-inverse a img {
+	max-width: 50px;
+	margin-right: 5px;
+}
+
+/*
+middle
+.navbar-inverse {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+*/
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: none;
+	}
+}
+
+.btn-primary {
+	background: DodgerBlue;
+	background-color: DodgerBlue !important;
+	border-radius: 0px;
+}
+
+.btn-primary:hover {
+	background-color: #0073e4 !important;
+}
+
+.line {
+	margin: 25px 0;
+	border: none;
+	height: 1px;
+	background: linear-gradient(to right,rgba(255,0, 0,0), rgba(255, 0, 0,1), rgba(255, 0, 0,0));
+}
+
+.btn {
+	background-color: DodgerBlue;
+	border: none;
+	color: white !important;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.btn:hover {
+	background-color: #0073e4;
+}
+
+a.download {
+	text-decoration: none;
+	color: #fff;
+	background: #50a6f6;
+	padding: 8px 10px;
+	border-radius: 3px;
+	display: block;
+	width: 120px;
+	margin: 100px auto 0 auto;
+	text-align: center;
+	z-index: 100;
+	transition: opacity .8s ease;
+}
+
+a.download.bottom {
+	width: 100px;
+	background: #b7d4ee;
+	opacity: 0;
+	margin-top: 0px;
+}
+
+a.download.bottom {
+	border-radius: 0 0 3px 3px;
+}
+
+/*cool*/
+.loginbox {
+	width: 320px;
+	height: auto;
+	background: #fff;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: inherit;
+	box-sizing: border-box;
+	padding: 20px 30px 10px 30px;
+	border-radius: 0px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    /*border-style: solid;*/
+	border-width: 1px;
+}
+
+.loginbox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"] {
+	border: none;
+	background: #f2f2f2;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	padding: 6px 12px 6px 12px;
+}
+
+.loginbox input[type="button"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: dodgerblue;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 0px;
+}
+
+.loginbox input[type="button"]:hover {
+	cursor: pointer;
+	background: #0073e4;
+}
+
+.loginbox a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.loginbox a:hover {
+	color: #878787;
+}
+
+.toHoverToolTip:hover .mytooltip {
+	visibility: visible;
+	opacity: 1;
+	transition: .5s ease;
+}
+
+.mytooltip {
+	background: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	height: auto;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0.3;
+	transform: translateY(-100%);
+}
+
+.downloadbox {
+	display: block;
+	border-radius: 5px;
+	width: 35%;
+}
+
+@media (max-width: 1085px) {
+	.downloadbox {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1085px) {
+	.downloadbox {
+		width: 35%;
+	}
+}
+
+@media (max-width: 843px) {
+	.downloadbox {
+		width: 55%;
+	}
+}
+
+@media (max-width: 688px) {
+	.downloadbox {
+		width: 65%;
+	}
+}
+
+@media (max-width: 589px) {
+	.downloadbox {
+		width: 75%;
+	}
+}
+
+@media (max-width: 510px) {
+	.downloadbox {
+		width: 100%;
+	}
+}
+
+.downloadbtn {
+	display: block;
+	padding: 12px 0px;
+	white-space: normal;
+}
+
+.embed-container-big {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container-big iframe, .embed-container-big object, .embed-container-big embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.embed-container-small {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	width: 85%;
+}
+
+.embed-container-small iframe, .embed-container-small object, .embed-container-small embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+}

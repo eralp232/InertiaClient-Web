@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="mainpictures/favicon.png">
+	<link rel="icon" href="mainpictures/favicon.png">
+	<title>Inertia Client</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Inertia Clients' DonationCenter Page">
+    <meta name="keywords" content="Inertia, Client, Inertia Client, Inertia Hacked Client, Minecraft, Hacked Client, Free Hacks, Free Mods, Free Cheats, Inertia Mod, Free Minecraft Client, Free Minecraft Mod, Better Than Future, Inertia Utility Mod, 1.16.3">
+    <meta property="og:title" content="Inertia Clients' DonationCenter Page">
+    <meta property="og:url" content="https://inertiaclient.com/">
+    <meta property="og:image" content="https://inertiaclient.com/mainpictures/inertiawebsite.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Inertia Client">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="Inertia Clients' DonationCenter Page">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@THEREALWWEFAN23">
+    <meta name="twitter:creator" content="@THEREALWWEFAN23">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><div id="backgroundpopup" class="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<p id="buyitemname"></p>
+		<p id="prebuy">Please wait.</p>
+		<p id="buymessage"></p>
+		<form id="buyform">
+			<div>
+				<input type="checkbox" name="buyforsomeoneelse" id="buyforsomeoneelse" style="display: inline-block;" required>
+				<p id="buyforsomeoneelsestring" style="display: inline-block;">Buy for someone else?</p>
+			</div>
+			<div>
+				<p id="forstring" style="display: none">For:</p>
+				<input type="text" name="buyingforusername" placeholder="enter persons' donation username" id="buyingforusername" style="display: none; border: none; background: #f2f2f2; outline: none; height: 40px; color: #000; font-size: 16px; padding: 6px 12px 6px 12px;" required>
+			</div>
+			<input type="checkbox" name="confirmbuy" id="confirmbuy" style="display: inline-block;" required>
+			<p id="confirmstring" style="display: inline-block;">Confirm you want to buy this item</p>
+			</br> <input type="button" name="login" value="Buy" id="realbuybutton" style="border: none; outline: none; height: 40px; background: dodgerblue; color: #fff; font-size: 18px; border-radius: 0px; padding: 5px 10px;" required>
+		</form>
+	</div>
+</div>
+	<style>
+.tooltips {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltips .tooltiptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltips .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.tooltips:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: fadeIn;
+	animation-duration: 0.4s;
+	color: black;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@
+-webkit-keyframes fadeIn {
+	from {opacity: 0
+}
+
+to {
+	opacity: 1
+}
+
+}
+@
+keyframes fadeIn {
+	from {opacity: 0
+}
+
+to {
+	opacity: 1
+}
+}
+</style>
+</head>
+<body background="mainpictures/background.jpg">
+
+	<div class="navbar navbar-inverse navbar-static-top">
+	<!--<div class="container">-->
+		<a href="Index.php.html" class="navbar-left"><img src="mainpictures/inertiawebsite.png" style="margin-left: 5px; position: relative; top: 5px;"></a>
+
+
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<div class="collapse navbar-collapse navHeaderCollapse">
+
+			<ul class="nav navbar-nav navbar-left">
+				<li class=""><a href="Index.php.html">Home</a></li>
+				<li class=""><a href="Information.php.html">Information</a></li>
+				<li class=""><a href="Download.php.html">Download</a></li>
+				<li class=""><a href="ChangeLog.php.html">Changelogs</a></li>
+				<li class=""><a href="Credits.php.html">Credits</a></li>
+				<li class=""><a href="Faq.php.html">FAQ</a></li>
+				<li class="active"><a href="DonationCenter.php.html">Donation Center</a></li>
+
+			</ul>
+			<a href="https://discord.gg/invite/ZyMKgSm" style="color: #ffffff; margin-right: 1px;" class="navbar-right">Support on<img src="mainpictures/discord.png"></a>
+
+		</div>
+
+	<!--</div>-->
+</div>
+	<div class="wrapper">
+
+				<div style="width: 20%; color: black; margin: 0px 0px auto 80%;">
+			<a href="DonationCenter.php%3Ftype=login.html" style="border-radius: 0;"
+				class="btn"> <i class="fa fa-download"></i>Login
+			</a>
+		</div>
+	<h2 id="itemname">Pre-builds</h2></br><h4>Description:</h4><p>Get development builds of Inertia Client, test the new features before the next public update(1.13.2 version not working(yet)).</p><h4>Items included:</h4><a style="display: block;" href="DonationCenter.php%3Ftype=viewitem&amp;item=DonatorRank.html" target="_blank">Donator Rank</a><a style="display: block;" href="DonationCenter.php%3Ftype=viewitem&amp;item=NoAds.html" target="_blank">No Ads</a></br><h4>Images:</h4><div><img src="donate/displaypictures/prebuilds.png" style="width: 40%; height: 40%;" id="slideshowimage"></img></div><div style="margin-top: 5px;"><h3 style="display: inline-block; margin-top: 0; margin-right: 5px;">Price: </h3><p style="display: inline-block;">2000 Inertia Client Coins</p></div><h3>Purchase policy:</h3><p>You are to not share the file with anyone doing so will get your account banned</p><center><a id="buy" style="border-radius: 0; padding: 12px 10%; margin-bottom: 10px;" class="btn"><i class="fa fa-download"></i>Buy</a></center>
+	</div>
+
+	<footer>
+	<div>
+		<p id="year">&copycurrentyear IKnowImEZ/THEREALWWEFAN231 (Inertia Client). All rights reserved</p>
+	</div>
+
+</footer>
+<script>
+document.getElementById("year").innerHTML = document.getElementById("year").innerHTML.replace("currentyear", new Date().getFullYear());
+</script>
+	<script type="text/javascript">
+	$(window).bind("load", function() {
+			var currentImageIndex = 2;
+			var images = ["displaypictures/prebuilds.png"];
+
+			var interval = setInterval(function() {
+				currentImageIndex = currentImageIndex >= images.length - 1 ? 0 : currentImageIndex + 1;
+				document.getElementById("slideshowimage").src = "donate/" + images[currentImageIndex];
+
+				// clearInterval(interval);
+
+			}, 2000);
+})	</script>
+
+	<script type="text/javascript">var viewItem = window.location.href.split("=")[window.location.href.split("=").length - 1];
+$(document).ready(function() {
+	$("#buy").on("click", function() {
+		document.getElementById("buyitemname").innerHTML = "Buy: " + document.getElementById("itemname").innerHTML;
+		$.ajax({
+			type : "POST",
+			url : ("DonationCenter.php"),
+			data : {
+				type : "prebuy",
+				item : viewItem,
+				submit : true,
+			},
+			success : function(responce) {
+				document.getElementById("prebuy").innerHTML = responce;
+				if (!responce.startsWith("You will have")) {
+					document.getElementById("buymessage").innerHTML = "";
+					document.getElementById("buyforsomeoneelse").style.display = "none";
+					document.getElementById("buyforsomeoneelsestring").style.display = "none";
+					document.getElementById("confirmbuy").style.display = "none";
+					document.getElementById("confirmstring").style.display = "none";
+					document.getElementById("realbuybutton").style.display = "none";
+					document.getElementById("buyform").style.display = "none";
+				} else {
+					document.getElementById("buymessage").innerHTML = "";
+					document.getElementById("buyforsomeoneelse").style.display = "inline-block";
+					document.getElementById("buyforsomeoneelsestring").style.display = "inline-block";
+					document.getElementById("confirmbuy").style.display = "inline-block";
+					document.getElementById("confirmstring").style.display = "inline-block";
+					document.getElementById("realbuybutton").style.display = "inline-block";
+					document.getElementById("buyform").style.display = "inline-block";
+				}
+			}
+		});
+});
+
+$("#realbuybutton").on("click", function() {
+	document.getElementById("buymessage").innerHTML = "";
+		$.ajax({
+			type : "POST",
+			url : ("DonationCenter.php"),
+			data : {
+				type : "buy",
+				item : viewItem,
+				buyforsomeoneelse : document.getElementById("buyforsomeoneelse").checked,
+				buyingforusername : document.getElementById("buyingforusername").value,
+				isconfirmed : document.getElementById("confirmbuy").checked,
+			},
+			success : function(responce) {
+
+				if (responce.includes(":") && responce.split(":")[0] == "Success") {
+					document.getElementById("buymessage").innerHTML = "Successfully bought " + document.getElementById("itemname").innerHTML;
+					window.location = responce.split(":")[1];
+				} else {
+					document.getElementById("buymessage").innerHTML = responce;
+				}
+			}
+		});
+});
+
+$("#buyforsomeoneelse").on("click", function() {
+	if (document.getElementById("buyforsomeoneelse").checked) {
+		document.getElementById("forstring").style.display = "inline-block";
+		document.getElementById("buyingforusername").style.display = "inline-block";
+	} else {
+		document.getElementById("forstring").style.display = "none";
+		document.getElementById("buyingforusername").style.display = "none";
+	}
+	});
+
+});
+
+var modal = document.getElementById("backgroundpopup");
+
+var btn = document.getElementById("buy");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+	modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+	document.getElementById("prebuy").innerHTML = "Please wait.";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+		document.getElementById("prebuy").innerHTML = "Please wait.";
+	}
+}</script>
+</body>
+</html>
